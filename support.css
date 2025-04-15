@@ -1,0 +1,563 @@
+/* Additional CSS for Support page specific styles */
+
+/* Stats Section */
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.stat-card {
+    background-color: var(--white);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--light-grey);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-sm);
+    color: var(--deep-blue);
+    font-size: var(--font-size-2xl);
+}
+
+.stat-number {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    color: var(--deep-blue);
+    margin-bottom: var(--spacing-xs);
+}
+
+.stat-label {
+    color: var(--medium-grey);
+    font-size: var(--font-size-sm);
+}
+
+/* Mission List */
+.mission-list {
+    margin-bottom: var(--spacing-lg);
+}
+
+.mission-list li {
+    margin-bottom: var(--spacing-sm);
+    display: flex;
+    align-items: flex-start;
+}
+
+.mission-list li i {
+    color: var(--teal-blue);
+    margin-right: var(--spacing-sm);
+    margin-top: 0.25rem;
+}
+
+.mission-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+}
+
+/* Funding Progress */
+.funding-progress {
+    margin-bottom: var(--spacing-lg);
+}
+
+.funding-goal {
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+.progress-container {
+    height: 30px;
+    background-color: var(--light-grey);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin: var(--spacing-sm) 0;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--teal-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-weight: 600;
+    transition: width 1s ease-in-out;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    color: var(--medium-grey);
+    font-size: var(--font-size-sm);
+}
+
+.funding-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.project-progress {
+    background-color: var(--white);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.project-info h4 {
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Support Options */
+.support-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.support-card {
+    background-color: var(--white);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.support-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.support-icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--light-grey);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-md);
+    color: var(--deep-blue);
+    font-size: var(--font-size-3xl);
+}
+
+.donation-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin: var(--spacing-md) 0;
+}
+
+.donation-btn {
+    padding: 0.5rem 1rem;
+    background-color: var(--light-grey);
+    border: none;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.donation-btn:hover, .donation-btn.active {
+    background-color: var(--teal-blue);
+    color: var(--white);
+}
+
+.shop-items {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+}
+
+.shop-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.shop-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--radius-md);
+    object-fit: cover;
+}
+
+.donation-needs, .volunteer-opportunities {
+    text-align: left;
+    margin: var(--spacing-md) 0;
+    padding-left: var(--spacing-lg);
+}
+
+.donation-needs li, .volunteer-opportunities li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.social-share {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin: var(--spacing-md) 0;
+}
+
+.social-share-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: 0.5rem 1rem;
+    background-color: var(--light-grey);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: var(--deep-blue);
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.social-share-btn:hover {
+    background-color: var(--deep-blue);
+    color: var(--white);
+}
+
+/* Campaigns */
+.campaigns-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.campaign-card {
+    background-color: var(--white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.campaign-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.campaign-image {
+    position: relative;
+}
+
+.campaign-image img {
+    width: 100%;
+    height: auto;
+}
+
+.campaign-badge {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    background-color: var(--vibrant-orange);
+    color: var(--white);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+}
+
+.campaign-content {
+    padding: var(--spacing-md);
+}
+
+.campaign-progress {
+    margin: var(--spacing-md) 0;
+}
+
+.progress-stats {
+    display: flex;
+    justify-content: space-between;
+    color: var(--medium-grey);
+    font-size: var(--font-size-sm);
+    margin-top: var(--spacing-xs);
+}
+
+.campaign-meta {
+    display: flex;
+    justify-content: space-between;
+    color: var(--medium-grey);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Partnership Section */
+.partnership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.partnership-card {
+    background-color: var(--white);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.partnership-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.partnership-icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--light-grey);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-md);
+    color: var(--deep-blue);
+    font-size: var(--font-size-3xl);
+}
+
+.partnership-benefits {
+    margin: var(--spacing-md) 0;
+    padding-left: var(--spacing-lg);
+}
+
+.partnership-benefits li {
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Sponsorship Levels */
+.sponsorship-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.sponsorship-card {
+    background-color: var(--white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    position: relative;
+}
+
+.sponsorship-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.sponsorship-card.featured {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-lg);
+}
+
+.sponsorship-card.featured:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+.sponsorship-badge {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    background-color: var(--vibrant-orange);
+    color: var(--white);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+    z-index: 1;
+}
+
+.sponsorship-header {
+    padding: var(--spacing-md);
+    text-align: center;
+    color: var(--white);
+}
+
+.sponsorship-header.bronze {
+    background-color: #cd7f32;
+}
+
+.sponsorship-header.silver {
+    background-color: #c0c0c0;
+}
+
+.sponsorship-header.gold {
+    background-color: #ffd700;
+    color: var(--deep-blue);
+}
+
+.sponsorship-header.platinum {
+    background-color: #e5e4e2;
+    color: var(--deep-blue);
+}
+
+.sponsorship-amount {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin-top: var(--spacing-xs);
+}
+
+.sponsorship-content {
+    padding: var(--spacing-md);
+}
+
+.sponsorship-benefits {
+    list-style: none;
+    padding: 0;
+    margin: var(--spacing-md) 0;
+}
+
+.sponsorship-benefits li {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.sponsorship-benefits li i.fa-check {
+    color: var(--green);
+}
+
+.sponsorship-benefits li i.fa-times {
+    color: var(--medium-grey);
+}
+
+/* Income Strategies */
+.income-strategy {
+    margin-bottom: var(--spacing-md);
+}
+
+.income-strategy h4 {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--deep-blue);
+}
+
+.income-strategy h4 i {
+    color: var(--teal-blue);
+}
+
+/* Donor Recognition */
+.donor-tiers {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.donor-tier {
+    text-align: center;
+}
+
+.donor-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+}
+
+.donor-logo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-sm);
+}
+
+.individual-donors {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.donor-wall {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.donor-wall span {
+    background-color: var(--light-grey);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-sm);
+}
+
+/* Contact Section */
+.contact-info {
+    margin: var(--spacing-lg) 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.contact-item i {
+    width: 40px;
+    height: 40px;
+    background-color: var(--light-grey);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--deep-blue);
+}
+
+/* Media queries */
+@media (max-width: 992px) {
+    .grid-cols-2 {
+        grid-template-columns: 1fr;
+    }
+    
+    .mission-image {
+        margin-top: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 768px) {
+    .support-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .campaigns-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .partnership-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sponsorship-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sponsorship-card.featured {
+        transform: none;
+    }
+    
+    .sponsorship-card.featured:hover {
+        transform: translateY(-5px);
+    }
+}
