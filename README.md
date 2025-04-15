@@ -1,2 +1,2 @@
-# funding-proposal
+# support-us
 STEAM-Labz - Funding Proposal
